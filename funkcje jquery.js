@@ -46,11 +46,11 @@
   });
   $(document).click(function(){
     $("#button_10").click(function(){
-    $("p").show();
+    $("p").toggle();
   });
 });
-$(document).click(function(){
+$(document).ready(function(){
   $("#button_11").click(function(){
-  $(".cp_01").show();
-});
+    $(".cp_01").toggle();
+  });
 });
