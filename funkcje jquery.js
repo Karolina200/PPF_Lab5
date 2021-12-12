@@ -12,12 +12,6 @@
   $("#button_04").click(function(){
     $("*").hide();
   })
-  $("#button_04").click(function(){
-    $("*").hide();
-  })
-  $("#button_04").click(function(){
-    $("*").hide();
-  })
     $("#button_05").click(function(){
       $("[href]").hide();
     })
