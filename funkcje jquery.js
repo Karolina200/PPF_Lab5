@@ -1,7 +1,7 @@
 
   $(document).ready(function(){
     $("#button_01").click(function(){
-      $("p").hide();
+      $("p").hide(500);
     });
   });
   $(document).ready(function(){
@@ -44,3 +44,13 @@
       $(":button").hide();
     });
   });
+  $(document).click(function(){
+    $("#button_10").click(function(){
+    $("p").show();
+  });
+});
+$(document).click(function(){
+  $("#button_11").click(function(){
+  $(".cp_01").show();
+});
+});
