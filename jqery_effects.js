@@ -28,4 +28,27 @@ $(document).ready(function(){
     $("#button_07").click(function(){
         $("h1").slideToggle();
     })
-});
+      $("#button_08").click(function(){
+        var div = $("div");
+        startAnimation();
+        function startAnimation(){
+          div.animate({height: 500}, "slow");
+          div.animate({width: 500}, "slow");
+          div.animate({height: 300}, "slow");
+          div.animate({width: 300}, "slow");
+          div.css("background-color", "blue");  
+          div.animate({height: 100}, "slow");
+          div.animate({width: 100}, "slow", startAnimation);
+        }
+      })
+      $("#button_08").click(function(){
+        var div = $("div1");
+        startAnimation();
+        function startAnimation(){
+          div.animate({fontSize: "3em"},"slow");
+    div.animate({fontSize: "1em"},"slow");
+          div.animate({fontSize: "4em"},"slow");
+          div.animate({fontSize: "2em"},"slow", startAnimation);
+        }
+      })
+    });
