@@ -4,8 +4,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-          $("button").click(function(){
+          $("#button_01").click(function(){
             $("p").hide();
+          });
+        });
+        </script>
+    <script>
+        $(document).ready(function(){
+          $("#button_02").click(function(){
+            $("#p_03").hide();
           });
         });
         </script>
@@ -14,8 +21,9 @@
     <h1>Nagłówek.</h1>
     <p>Pierwszy paragraf.</p>
     <p>Kolejny paragraf.</p>
-    
-    <button>Naciśnij,aby usunąć paragrafy </button>
+    <p id="p_03">To jest trzeci paragraf</p>
+    <button id="button_01">Naciśnij,aby usunąć paragrafy </button>
+    <button id="button_02">Naciśnij,aby usunąć paragraf 3 </button>
 
 </body>
 </html>
