@@ -1,12 +1,31 @@
-
-  $(document).ready(function(){
-    $("#btn1").click(function(){
-      $("#p1").fadeToggle(2500)
-    });
-    $("#btn1").click(function(){
-      $("#p2").fadeToggle("slow", "linear");
-    });
-    $("#btn1").click(function(){
-      $("#p3").fadeToggle("fast");
-    });
-  });
+$(document).ready(function(){
+    $("#button_01").click(function(){
+    $("#p1").fadeOut("fast");
+    $("#p2").fadeOut("slow");
+    $("#p3").fadeOut(800);
+    })
+    $("#button_02").click(function(){
+        $("#p1").fadeIn("fast");
+      $("#p2").fadeIn("slow");
+      $("#p3").fadeIn(800);
+    })
+    $("#button_03").click(function(){
+        $("#p1").fadeTo("fast",0.1);
+      $("#p2").fadeTo("slow",0.7);
+      $("#p3").fadeTo(800,0.5);
+    })
+    $("#button_04").click(function(){
+        $("#p1").fadeToggle("fast");
+      $("#p2").fadeToggle("slow");
+      $("#p3").fadeToggle(800);
+    })
+    $("#button_05").click(function(){
+        $("h1").slideDown();
+    })
+    $("#button_06").click(function(){
+        $("h1").slideUp();
+    })
+    $("#button_07").click(function(){
+        $("h1").slideToggle();
+    })
+});
