@@ -20,25 +20,40 @@ $(document).ready(function () {
     $("#p3").fadeToggle(800);
   });
   $("#button_05").click(function () {
-    $("h1").slideDown();
+    $("p1").slideDown();
   });
   $("#button_06").click(function () {
-    $("h1").slideUp();
+    $("p1").slideUp();
   });
   $("#button_07").click(function () {
-    $("h1").slideToggle();
+    $("p1").slideToggle();
   });
   $("#button_08").click(function () {
-  var div = $(".redSquare");
-    div.animate({ height: '500px' ,fontSize: "4em"}, "slow");
-    div.animate({ width: '500px',fontSize: "3em" }, "slow");
-    div.animate({ height: '100px',fontSize: "1em" }, "slow");
-    div.animate({ width: '200px',fontSize: "2em" }, "slow");
-    div.animate({ height: '100px',fontSize: "1em" }, "slow");
+    var div = $(".redSquare");
+    div.animate({ height: "500px", fontSize: "0.7em" }, "slow");
+    div.animate({ width: "500px", fontSize: "2em" }, "slow");
+    div.animate({ height: "300px", fontSize: "4em" }, "slow");
+    div.animate({ width: "300px", fontSize: "4em" }, "slow");
+    div.animate({ height: "100px", fontSize: "2em" }, "slow");
+    div.animate({ width: "200px", fontSize: "3em" }, "slow");
+    div.animate({ height: "100px", fontSize: "1em" }, "slow");
     div.css("background-color", "blue");
-    div.animate({ width: '100px' }, "slow");
-});
-$("#button_09").click(function(){
-  $('.redSquare').stop(true,true);
+    div.css("color", "red");
+    div.animate({ width: "100px" }, "slow");
+  });
+  $("#button_09").click(function () {
+    $(".redSquare").stop(true, true);
+  });
+  $("#button_10").click(function () {
+    $(".redSquare").hide("slow", function () {
+      alert("Kwadrat ukryto");
+    });
+  });
+  $("#button_11").click(function () {
+    $(".redSquare").css("color", "green").slideUp(1000).slideDown(1000);
+  });
+  $("#button_12").click(function () {
+  $(".redSquare").css("color", "purple").css("background","black")
+  .slideToggle(4000);
 });
 });

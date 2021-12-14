@@ -1,8 +1,12 @@
 .redSquare {
+  position: absolute;
   top: 300px;
+  bottom: auto;
   left: 500px;
   right: 100px;
     width:100px;
     height: 100px;
+    font-weight: bold;
+    color: black;
     background-color: #e03131;
   }
