@@ -1,4 +1,7 @@
-.square {
+.redSquare {
+  top: 300px;
+  left: 500px;
+  right: 100px;
     width:100px;
     height: 100px;
     background-color: #e03131;
